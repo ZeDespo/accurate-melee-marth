@@ -42,3 +42,12 @@ the grab stops scaling.
 
 ### Down Throw
 - Knockback angle greatly reduced to trip up opponents.
+
+
+## Ideas for Future Work
+
+1) If holding the A button after landing a tipper forward air, teleport above the opponent and automatically do the Ken Combo.
+2) Increase the size of Marth's sword to that of Ike's, and extend the hitboxes.
+3) Replace all of his movement sounds with https://www.youtube.com/watch?v=LAj-QrxINPg
+4) Chargeable grab (no idea if this is even possible) to make Marth's grab box taller / longer.
+
