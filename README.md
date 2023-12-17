@@ -1,5 +1,7 @@
 # 100% Accurate Melee Marth 
 
+*Developed with Smashline 2*
+
 This is exactly how broken we all remember him being in Melee.
 
 This is my very first mod, so please do not hold back. Good, critical feedback is 
