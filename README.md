@@ -48,10 +48,11 @@ the grab stops scaling.
 
 ## Ideas for Future Work
 
-1) If holding the A button after landing a tipper forward air, teleport above the opponent and automatically do the Ken Combo.
+1) If holding the A button after landing a tipper forward air, teleport above the 
+opponent and automatically do the Ken Combo.
 2) Increase the size of Marth's sword to that of Ike's, and extend the hitboxes.
 3) Replace all of his movement sounds with https://www.youtube.com/watch?v=LAj-QrxINPg
 4) Chargeable grab (no idea if this is even possible) to make Marth's grab box taller / longer.
-5) Slowing down Dancing Blade to the melee equivalent with the melee hitboxes 
+5) Slowing down Dancing Blade to the melee equivalent with the melee hitboxes. 
 6) Cancel Dancing Blade in the air to enable all aerial strings.
-7) Define cancel frames for NAir and Bair
+7) Define cancel frames for NAir and Bair.
