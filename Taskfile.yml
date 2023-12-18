@@ -30,3 +30,4 @@ tasks:
               -name "ui" 
               \) | xargs cp -r -t {{.NRO_MOD_DIR}}
         desc: "Deploy fighter assets."
+
