@@ -12,8 +12,7 @@ use {
     smashline::*,
 };
 
-// 1) Speed up the animation so the attack matches the original melee startup frames.
-// 2) All tippers are spikes, no matter what.
+// 1) All tippers are spikes, no matter what.
 unsafe extern "C" fn marth_attackairlw(agent: &mut L2CAgentBase) {
     if macros::is_excute(agent) {
         WorkModule::on_flag(
@@ -25,10 +24,7 @@ unsafe extern "C" fn marth_attackairlw(agent: &mut L2CAgentBase) {
             *FIGHTER_COMMAND_ATTACK_AIR_KIND_B,
         );
     }
-    frame(agent.lua_state_agent, 1.0);
-    macros::FT_MOTION_RATE(agent, 0.6);
-    frame(agent.lua_state_agent, 9.0);
-    macros::FT_MOTION_RATE(agent, 1.3);
+    frame(agent.lua_state_agent, 5.0);
     if macros::is_excute(agent) {
         macros::ATTACK(
             agent,
@@ -148,49 +144,49 @@ unsafe extern "C" fn marth_attackairlw(agent: &mut L2CAgentBase) {
             *ATTACK_REGION_SWORD,
         );
     }
-    frame(agent.lua_state_agent, 11.0);
-    if macros::is_excute(agent) {
-        macros::ATTACK(
-            agent,
-            0,
-            0,
-            Hash40::new("top"),
-            15.0,
-            280,
-            80,
-            0,
-            20,
-            5.0,
-            0.0,
-            -3.3,
-            -3.0,
-            None,
-            None,
-            None,
-            1.3,
-            1.0,
-            *ATTACK_SETOFF_KIND_ON,
-            *ATTACK_LR_CHECK_POS,
-            false,
-            0,
-            0.0,
-            0,
-            false,
-            false,
-            false,
-            false,
-            true,
-            *COLLISION_SITUATION_MASK_GA,
-            *COLLISION_CATEGORY_MASK_ALL,
-            *COLLISION_PART_MASK_ALL,
-            false,
-            Hash40::new("collision_attr_cutup"),
-            *ATTACK_SOUND_LEVEL_L,
-            *COLLISION_SOUND_ATTR_MARTH_SWORD,
-            *ATTACK_REGION_SWORD,
-        );
-    }
-    frame(agent.lua_state_agent, 13.0);
+    // frame(agent.lua_state_agent, 10.0);
+    // if macros::is_excute(agent) {
+    //     macros::ATTACK(
+    //         agent,
+    //         0,
+    //         0,
+    //         Hash40::new("top"),
+    //         15.0,
+    //         280,
+    //         80,
+    //         0,
+    //         20,
+    //         5.0,
+    //         0.0,
+    //         -3.3,
+    //         -3.0,
+    //         None,
+    //         None,
+    //         None,
+    //         1.3,
+    //         1.0,
+    //         *ATTACK_SETOFF_KIND_ON,
+    //         *ATTACK_LR_CHECK_POS,
+    //         false,
+    //         0,
+    //         0.0,
+    //         0,
+    //         false,
+    //         false,
+    //         false,
+    //         false,
+    //         true,
+    //         *COLLISION_SITUATION_MASK_GA,
+    //         *COLLISION_CATEGORY_MASK_ALL,
+    //         *COLLISION_PART_MASK_ALL,
+    //         false,
+    //         Hash40::new("collision_attr_cutup"),
+    //         *ATTACK_SOUND_LEVEL_L,
+    //         *COLLISION_SOUND_ATTR_MARTH_SWORD,
+    //         *ATTACK_REGION_SWORD,
+    //     );
+    // }
+    frame(agent.lua_state_agent, 10.0);
     if macros::is_excute(agent) {
         AttackModule::clear(agent.module_accessor, 0, false);
     }

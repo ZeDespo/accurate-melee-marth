@@ -15,3 +15,18 @@ tasks:
             - build
         vars:
             BUILD_DIR: target/aarch64-skyline-switch/debug
+    deploy-assets:
+        cmds: 
+            - mkdir -p {{.NRO_MOD_DIR}}
+            - rm -r {{.NRO_MOD_DIR}}/* || echo "No files to delete!"
+            - find . -maxdepth 1 -type d \( 
+              -name "camera" -o 
+              -name "effect" -o 
+              -name "fighter" -o 
+              -name "param" -o 
+              -name "sound" -o 
+              -name "stage" -o 
+              -name "stream;" -o  
+              -name "ui" 
+              \) | xargs cp -r -t {{.NRO_MOD_DIR}}
+        desc: "Deploy fighter assets."
