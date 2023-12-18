@@ -1295,7 +1295,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 28
+      cancel_frame: 21
       no_stop_intp: false
   attack_air_lw:
     game_script: game_attackairlw
@@ -1807,7 +1807,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 10
+      cancel_frame: 30
       no_stop_intp: false
   special_air_s2_hi:
     game_script: game_specialairs2hi
