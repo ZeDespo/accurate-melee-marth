@@ -12,6 +12,9 @@ pub const JAB_1_HITSTUN_TIPPER: f32 = 2.3;
 pub const KEN_COMBO_FAIR_ANGLE: u64 = 67;
 pub const FAIR_TIPPER_SIZE: f32 = 5.0;
 
+pub const GRAB_1_SIZE: f32 = 16.0;
+pub const GRAB_2_SIZE: f32 = 9.0;
+
 pub const DAIR_TIPPER_ANGLE: u64 = 280;
 pub const DAIR_TIPPER_HITSTUN: f32 = 1.75;
 

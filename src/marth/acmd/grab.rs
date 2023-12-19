@@ -1,3 +1,4 @@
+use crate::vars::{GRAB_1_RANGE, GRAB_2_RANGE};
 use {
     smash::{
         app::{lua_bind::*, sv_animcmd::*, *},
@@ -8,9 +9,6 @@ use {
     smash_script::*,
     smashline::*,
 };
-
-static GRAB_1_SIZE: f32 = 16.0;
-static GRAB_2_SIZE: f32 = 9.0;
 
 // Given amount of damage taken, lengthen the grab range.
 unsafe extern "C" fn calculate_grab_length(
@@ -44,7 +42,7 @@ unsafe extern "C" fn marth_catch(agent: &mut L2CAgentBase) {
             4.0,
             Some(0.0),
             Some(8.0),
-            Some(calculate_grab_length(agent.module_accessor, GRAB_1_SIZE)),
+            Some(calculate_grab_length(agent.module_accessor, GRAB_1_RANGE)),
             *FIGHTER_STATUS_KIND_CAPTURE_PULLED,
             *COLLISION_SITUATION_MASK_G,
         );
@@ -58,7 +56,7 @@ unsafe extern "C" fn marth_catch(agent: &mut L2CAgentBase) {
             2.35,
             Some(0.0),
             Some(8.0),
-            Some(calculate_grab_length(agent.module_accessor, GRAB_2_SIZE)),
+            Some(calculate_grab_length(agent.module_accessor, GRAB_2_RANGE)),
             *FIGHTER_STATUS_KIND_CAPTURE_PULLED,
             *COLLISION_SITUATION_MASK_A,
         );
@@ -89,7 +87,7 @@ unsafe extern "C" fn marth_catchdash(agent: &mut L2CAgentBase) {
             4.0,
             Some(0.0),
             Some(7.25),
-            Some(calculate_grab_length(agent.module_accessor, GRAB_1_SIZE)),
+            Some(calculate_grab_length(agent.module_accessor, GRAB_1_RANGE)),
             *FIGHTER_STATUS_KIND_CAPTURE_PULLED,
             *COLLISION_SITUATION_MASK_G,
         );
@@ -103,7 +101,7 @@ unsafe extern "C" fn marth_catchdash(agent: &mut L2CAgentBase) {
             2.7,
             Some(0.0),
             Some(7.0),
-            Some(calculate_grab_length(agent.module_accessor, GRAB_2_SIZE)),
+            Some(calculate_grab_length(agent.module_accessor, GRAB_2_RANGE)),
             *FIGHTER_STATUS_KIND_CAPTURE_PULLED,
             *COLLISION_SITUATION_MASK_A,
         );
@@ -134,7 +132,7 @@ unsafe extern "C" fn marth_catchturn(agent: &mut L2CAgentBase) {
             -4.0,
             Some(0.0),
             Some(7.0),
-            Some(-13.2 - calculate_grab_length(agent.module_accessor, GRAB_1_SIZE)),
+            Some(-13.2 - calculate_grab_length(agent.module_accessor, GRAB_1_RANGE)),
             *FIGHTER_STATUS_KIND_CAPTURE_PULLED,
             *COLLISION_SITUATION_MASK_G,
         );
@@ -148,7 +146,7 @@ unsafe extern "C" fn marth_catchturn(agent: &mut L2CAgentBase) {
             -2.35,
             Some(0.0),
             Some(7.0),
-            Some(-14.85 - calculate_grab_length(agent.module_accessor, GRAB_2_SIZE)),
+            Some(-14.85 - calculate_grab_length(agent.module_accessor, GRAB_2_RANGE)),
             *FIGHTER_STATUS_KIND_CAPTURE_PULLED,
             *COLLISION_SITUATION_MASK_A,
         );
