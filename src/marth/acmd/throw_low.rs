@@ -1,5 +1,7 @@
 //! Create an untechable downthrow that the opponent will need to adapt to.
 
+use crate::vars::DOWN_THROW_ANGLE;
+
 use {
     smash::{
         app::{lua_bind::*, sv_animcmd::*, *},
@@ -19,7 +21,7 @@ unsafe extern "C" fn marth_throwlw(agent: &mut L2CAgentBase) {
             *FIGHTER_ATTACK_ABSOLUTE_KIND_THROW,
             0,
             5.0,
-            135,
+            DOWN_THROW_ANGLE,
             50,
             0,
             65,

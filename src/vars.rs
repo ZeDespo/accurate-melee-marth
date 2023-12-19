@@ -6,8 +6,20 @@ use smash::{
     phx::*,
 };
 
-// TODO: Implement auto-ken combo
-pub const FIGHTER_MARTH_INSTANCE_WORK_ID_FAIR_HIT: i32 = 0x2000eb;
+pub const JAB_1_HITSTUN: f32 = 1.7;
+pub const JAB_1_HITSTUN_TIPPER: f32 = 2.3;
+
+pub const KEN_COMBO_FAIR_ANGLE: u64 = 67;
+pub const FAIR_TIPPER_SIZE: f32 = 5.0;
+
+pub const DAIR_TIPPER_ANGLE: u64 = 280;
+pub const DAIR_TIPPER_HITSTUN: f32 = 1.75;
+
+pub const UP_THROW_BKB: i32 = 60;
+pub const UP_THROW_KBG: i32 = 130;
+
+// Evil angle, may adjust.
+pub const DOWN_THROW_ANGLE: u64 = 135;
 
 // Simple struct to pair actions with when we can cancel them.
 pub struct CancelFrame {

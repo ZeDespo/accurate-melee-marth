@@ -1,5 +1,7 @@
 //! To the moon with you!
 
+use crate::vars::{UP_THROW_BKB, UP_THROW_KBG};
+
 use {
     smash::{
         app::{lua_bind::*, sv_animcmd::*, *},
@@ -19,9 +21,9 @@ unsafe extern "C" fn marth_throwhi(agent: &mut L2CAgentBase) {
             0,
             5.0,
             93,
-            130,
+            UP_THROW_KBG,
             0,
-            60,
+            UP_THROW_BKB,
             0.0,
             1.0,
             *ATTACK_LR_CHECK_F,

@@ -1,3 +1,7 @@
+//! Give Jab 1 more hitstun to enable cancel, if and only if you hit with the sword.
+
+use crate::vars::{JAB_1_HITSTUN, JAB_1_HITSTUN_TIPPER};
+
 use {
     smash::{
         app::{lua_bind::*, sv_animcmd::*, *},
@@ -9,15 +13,9 @@ use {
     smashline::*,
 };
 
-use crate::vars::FIGHTER_MARTH_INSTANCE_WORK_ID_JAB_1_HIT;
-
 unsafe extern "C" fn marth_attack11(agent: &mut L2CAgentBase) {
     frame(agent.lua_state_agent, 5.0);
     if macros::is_excute(agent) {
-        WorkModule::on_flag(
-            agent.module_accessor,
-            FIGHTER_MARTH_INSTANCE_WORK_ID_JAB_1_HIT,
-        );
         macros::ATTACK(
             agent,
             0,
@@ -74,7 +72,7 @@ unsafe extern "C" fn marth_attack11(agent: &mut L2CAgentBase) {
             None,
             None,
             None,
-            1.3,
+            JAB_1_HITSTUN,
             1.0,
             *ATTACK_SETOFF_KIND_ON,
             *ATTACK_LR_CHECK_F,
@@ -113,7 +111,7 @@ unsafe extern "C" fn marth_attack11(agent: &mut L2CAgentBase) {
             None,
             None,
             None,
-            1.7,
+            JAB_1_HITSTUN_TIPPER,
             1.0,
             *ATTACK_SETOFF_KIND_ON,
             *ATTACK_LR_CHECK_F,
@@ -152,7 +150,7 @@ unsafe extern "C" fn marth_attack11(agent: &mut L2CAgentBase) {
             None,
             None,
             None,
-            1.7,
+            JAB_1_HITSTUN_TIPPER,
             1.0,
             *ATTACK_SETOFF_KIND_ON,
             *ATTACK_LR_CHECK_F,
@@ -178,10 +176,6 @@ unsafe extern "C" fn marth_attack11(agent: &mut L2CAgentBase) {
     wait(agent.lua_state_agent, 2.0);
     if macros::is_excute(agent) {
         AttackModule::clear_all(agent.module_accessor);
-        WorkModule::off_flag(
-            agent.module_accessor,
-            FIGHTER_MARTH_INSTANCE_WORK_ID_JAB_1_HIT,
-        );
     }
     frame(agent.lua_state_agent, 10.0);
     if macros::is_excute(agent) {

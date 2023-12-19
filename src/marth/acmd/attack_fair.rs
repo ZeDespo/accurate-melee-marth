@@ -1,7 +1,9 @@
 //! Marth's forward aerial in melee was THE facilitator for the
 //! Ken Combo. Restore FAIR to its former glory.
 //!
-//! The major change here will be to use a flag to detect the FAIR hit.
+//! And by that, I mean make it unnecessarily broken.
+
+use crate::vars::{FAIR_TIPPER_SIZE, KEN_COMBO_FAIR_ANGLE};
 
 use {
     smash::{
@@ -22,7 +24,7 @@ unsafe extern "C" fn marth_attackairf(agent: &mut L2CAgentBase) {
         );
     }
     frame(agent.lua_state_agent, 1.0);
-    macros::FT_MOTION_RATE(agent, 0.66);
+    macros::FT_MOTION_RATE(agent, 0.66); // Active Frame on or about 4
     frame(agent.lua_state_agent, 4.0);
     macros::FT_MOTION_RATE(agent, 1.3);
     if macros::is_excute(agent) {
@@ -110,11 +112,11 @@ unsafe extern "C" fn marth_attackairf(agent: &mut L2CAgentBase) {
             0,
             Hash40::new("sword1"),
             13.0,
-            67,
+            KEN_COMBO_FAIR_ANGLE,
             70,
             0,
             42,
-            5.0,
+            FAIR_TIPPER_SIZE,
             1.0,
             0.0,
             7.5,
