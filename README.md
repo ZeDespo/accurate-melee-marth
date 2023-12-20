@@ -15,6 +15,14 @@ invaluable for future mod development.
 - Gave Marth a comeback mechanic where grab length scales with damage taken. Once at 100%, 
 the grab stops scaling.
 
+### Fsmash
+
+- Increased Tipper range
+
+### Jab
+
+- Jab 1 is now cancellable into any move.
+
 ### Aerials
 
 - DAir, FAir, and UAir can be cancelled much earlier, buffing Marth's air game. 
@@ -31,11 +39,17 @@ the grab stops scaling.
 #### DAir 
 
 - Made spike for the ken combo easier to hit. 
+- Increased tipper size
+
+#### Bair
+
+- Increased Tipper size
 
 ### Side Special
 
 - "He flies through the air with the greatest of ease"
 - Gives Marth a horizontal and veritcal boost when using move 1 in the air. 
+- Cancellable move 1, so you can better enable combos.
 
 ### Up Throw
 

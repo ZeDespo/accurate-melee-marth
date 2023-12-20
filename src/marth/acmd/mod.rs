@@ -1,3 +1,4 @@
+mod attack_bair;
 mod attack_dair;
 mod attack_fair;
 mod attack_fsmash;
@@ -14,6 +15,7 @@ pub fn install() {
     attack_uair::install();
     attack_jab::install();
     attack_fsmash::install();
+    attack_bair::install();
     grab::install();
     special_side::install();
     throw_high::install();

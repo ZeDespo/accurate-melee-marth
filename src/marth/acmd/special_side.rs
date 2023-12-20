@@ -1,5 +1,6 @@
 //! Marth's side special, if used in the air, provides a boost to velocity to use as a recovery option.
 
+use crate::vars::SIDE_SPECIAL_AIR_PHANTOM_HOP;
 use {
     smash::{
         app::{lua_bind::*, sv_animcmd::*, *},
@@ -18,14 +19,7 @@ unsafe extern "C" fn marth_specialairs1(agent: &mut L2CAgentBase) {
             agent.module_accessor,
             *FIGHTER_MARTH_STATUS_SPECIAL_S_FLAG_INPUT_CHECK,
         );
-        KineticModule::add_speed(
-            agent.module_accessor,
-            &Vector3f {
-                x: 0.6,
-                y: 0.39,
-                z: 0.2,
-            },
-        );
+        KineticModule::add_speed(agent.module_accessor, SIDE_SPECIAL_AIR_PHANTOM_HOP);
     }
     frame(agent.lua_state_agent, 9.0);
     if macros::is_excute(agent) {

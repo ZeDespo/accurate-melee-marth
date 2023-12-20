@@ -1,7 +1,7 @@
 //! Ken Combo code to get the spike just right in terms of its hitboxes
 //! and knockback angles.
 
-use crate::vars::DAIR_TIPPER_ANGLE;
+use crate::vars::{DAIR_BASE_KNOCKBACK, DAIR_TIPPER_ANGLE, DAIR_TIPPER_HITSTUN, SWORD_HITBOX_SIZE};
 
 use {
     smash::{
@@ -73,11 +73,11 @@ unsafe extern "C" fn marth_attackairlw(agent: &mut L2CAgentBase) {
             0,
             Hash40::new("sword1"),
             12.0,
-            80,
+            361,
             70,
             0,
-            40,
-            3.5,
+            DAIR_BASE_KNOCKBACK,
+            SWORD_HITBOX_SIZE - 0.8,
             1.0,
             0.0,
             2.0,
@@ -115,15 +115,15 @@ unsafe extern "C" fn marth_attackairlw(agent: &mut L2CAgentBase) {
             DAIR_TIPPER_ANGLE,
             80,
             0,
-            20,
-            3.5,
+            DAIR_BASE_KNOCKBACK * 2,
+            SWORD_HITBOX_SIZE + 1.0,
             1.0,
             0.0,
             6.7,
             None,
             None,
             None,
-            1.25,
+            DAIR_TIPPER_HITSTUN,
             1.0,
             *ATTACK_SETOFF_KIND_ON,
             *ATTACK_LR_CHECK_POS,
