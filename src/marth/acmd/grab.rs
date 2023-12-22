@@ -17,9 +17,9 @@ unsafe extern "C" fn calculate_grab_length(
 ) -> f32 {
     let curr_damage = DamageModule::damage(boma, 0);
     let grab_bonus = if curr_damage <= 100.0 && curr_damage >= 0.0 {
-        base_size + (curr_damage / 1.33)
+        base_size + (curr_damage / 1.6)
     } else {
-        base_size + 70.0
+        base_size + (100.0 / 1.6)
     };
     base_size + grab_bonus
 }

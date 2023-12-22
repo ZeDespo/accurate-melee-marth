@@ -60,6 +60,11 @@ the grab stops scaling.
 - Gives Marth a horizontal and veritcal boost when using move 1 in the air. 
 - Cancellable move 1, so you can better enable combos.
 
+### Up Special
+
+- Jigglypuff vs Roy matchup feels
+- Reverse hitbox with a base knockback of 130.
+
 ### Up Throw
 
 - Decreased base knockback to better enable combos.
