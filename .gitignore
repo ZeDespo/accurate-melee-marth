@@ -2,3 +2,4 @@ target/
 env.yml
 Cargo.lock
 motion_list.bin
+plugin.nro

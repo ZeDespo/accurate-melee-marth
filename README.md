@@ -10,6 +10,11 @@ other mods I have in mind.
 
 ## Modifications
 
+### Frame Data
+
+- All aerial landings assume L-Cancelling
+- All grounded attacks have built in IASA frames, so they cancel faster.
+
 ### Grab
 
 - Extended Marth's base grab range to it's Melee "equivalent". 
@@ -19,7 +24,7 @@ the grab stops scaling.
 ### Fsmash
 
 - Increased Tipper range
-- Can now hit behind the opponent
+- Sword hitbox is now active when Marth brings it up behind his head (Frame 6)
 
 ### Jab
 
@@ -47,6 +52,7 @@ the grab stops scaling.
 
 - Tipper a bit larger
 - Used Melee's down air animation (sword swing starts from direction marth faces)
+- Removed the sword sourspot in favor of a "slightly" weaker spike, making ken combo easier to achieve.
 - Cancellable on frame 30 
 
 #### Bair
@@ -57,13 +63,13 @@ the grab stops scaling.
 ### Side Special
 
 - "He flies through the air with the greatest of ease"
-- Gives Marth a horizontal and veritcal boost when using move 1 in the air. 
 - Cancellable move 1, so you can better enable combos.
+- Gives Marth a horizontal and veritcal boost when using move 1 in the air. 
 
 ### Up Special
 
-- Jigglypuff vs Roy matchup feels
-- Reverse hitbox with a base knockback of 130.
+- Melee Jigglypuff vs Melee Roy matchup feels
+- Reverse hitbox with a base knockback of 130, but only active on Frame 5.
 
 ### Up Throw
 
@@ -82,6 +88,7 @@ opponent and automatically do the Ken Combo.
 3) Replace all of his movement sounds with https://www.youtube.com/watch?v=LAj-QrxINPg
 4) Chargeable grab (no idea if this is even possible) to make Marth's grab box taller / longer.
 5) (Almost) Every sword hitbox is tipper.
+6) Make Dancing Blade's phantom hop property more dependent on Left Analog Stick.
 
 ## Credits
 
