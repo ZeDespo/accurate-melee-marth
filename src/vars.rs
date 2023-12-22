@@ -9,10 +9,10 @@ use smash::{
 pub const SWORD_HITBOX_SIZE: f32 = 3.5;
 
 pub const JAB_1_HITSTUN: f32 = 1.7;
-pub const JAB_1_HITSTUN_TIPPER: f32 = 2.3;
+pub const JAB_1_HITSTUN_TIPPER: f32 = 2.1;
 
 pub const KEN_COMBO_FAIR_ANGLE: u64 = 67;
-pub const FAIR_TIPPER_SIZE: f32 = 5.0;
+pub const FAIR_TIPPER_SIZE: f32 = 4.2;
 
 pub const GRAB_1_RANGE: f32 = 16.0;
 pub const GRAB_2_RANGE: f32 = 9.0;
