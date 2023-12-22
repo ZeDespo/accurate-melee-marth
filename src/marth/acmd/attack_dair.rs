@@ -1,5 +1,7 @@
 //! Ken Combo code to get the spike just right in terms of its hitboxes
 //! and knockback angles.
+//!
+//! Also let's make the tipper more pronounced, as it's not easy getting a parody tipper
 
 use crate::vars::{DAIR_BASE_KNOCKBACK, DAIR_TIPPER_ANGLE, DAIR_TIPPER_HITSTUN, SWORD_HITBOX_SIZE};
 
@@ -80,7 +82,7 @@ unsafe extern "C" fn marth_attackairlw(agent: &mut L2CAgentBase) {
             SWORD_HITBOX_SIZE - 0.8,
             1.0,
             0.0,
-            2.0,
+            0.0,
             None,
             None,
             None,

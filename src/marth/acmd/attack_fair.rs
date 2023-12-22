@@ -123,7 +123,7 @@ unsafe extern "C" fn marth_attackairf(agent: &mut L2CAgentBase) {
             None,
             None,
             None,
-            1.66,
+            2.66,
             1.0,
             *ATTACK_SETOFF_KIND_ON,
             *ATTACK_LR_CHECK_F,
