@@ -24,7 +24,7 @@ unsafe extern "C" fn marth_specialhi(agent: &mut L2CAgentBase) {
             361,
             74,
             0,
-            130,
+            100,
             4.3,
             0.0,
             0.0,
@@ -32,7 +32,7 @@ unsafe extern "C" fn marth_specialhi(agent: &mut L2CAgentBase) {
             None,
             None,
             None,
-            1.0,
+            2.0,
             1.0,
             *ATTACK_SETOFF_KIND_OFF,
             *ATTACK_LR_CHECK_POS,
@@ -51,7 +51,7 @@ unsafe extern "C" fn marth_specialhi(agent: &mut L2CAgentBase) {
             false,
             Hash40::new("collision_attr_cutup"),
             *ATTACK_SOUND_LEVEL_L,
-            *COLLISION_SOUND_ATTR_CUTUP,
+            *COLLISION_SOUND_ATTR_MARTH_SWORD,
             *ATTACK_REGION_SWORD,
         );
         macros::ATTACK(
@@ -143,6 +143,7 @@ unsafe extern "C" fn marth_specialhi(agent: &mut L2CAgentBase) {
     }
     frame(agent.lua_state_agent, 6.0);
     if macros::is_excute(agent) {
+        AttackModule::clear(agent.module_accessor, 5, false);
         macros::ATTACK(
             agent,
             0,
@@ -251,7 +252,7 @@ unsafe extern "C" fn marth_specialairhi(agent: &mut L2CAgentBase) {
             361,
             74,
             0,
-            130,
+            100,
             4.3,
             0.0,
             0.0,
@@ -259,7 +260,7 @@ unsafe extern "C" fn marth_specialairhi(agent: &mut L2CAgentBase) {
             None,
             None,
             None,
-            1.0,
+            2.0,
             1.0,
             *ATTACK_SETOFF_KIND_OFF,
             *ATTACK_LR_CHECK_POS,
@@ -278,7 +279,7 @@ unsafe extern "C" fn marth_specialairhi(agent: &mut L2CAgentBase) {
             false,
             Hash40::new("collision_attr_cutup"),
             *ATTACK_SOUND_LEVEL_L,
-            *COLLISION_SOUND_ATTR_CUTUP,
+            *COLLISION_SOUND_ATTR_MARTH_SWORD,
             *ATTACK_REGION_SWORD,
         );
 
@@ -371,6 +372,7 @@ unsafe extern "C" fn marth_specialairhi(agent: &mut L2CAgentBase) {
     }
     frame(agent.lua_state_agent, 6.0);
     if macros::is_excute(agent) {
+        AttackModule::clear(agent.module_accessor, 5, false);
         macros::ATTACK(
             agent,
             0,
