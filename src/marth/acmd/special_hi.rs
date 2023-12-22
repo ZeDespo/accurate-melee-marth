@@ -282,7 +282,6 @@ unsafe extern "C" fn marth_specialairhi(agent: &mut L2CAgentBase) {
             *COLLISION_SOUND_ATTR_MARTH_SWORD,
             *ATTACK_REGION_SWORD,
         );
-
         macros::ATTACK(
             agent,
             2,
