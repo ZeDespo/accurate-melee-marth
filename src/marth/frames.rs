@@ -32,7 +32,7 @@ pub unsafe extern "C" fn melee_marth_frames(fighter: &mut L2CFighterCommon) {
     let mk = MotionModule::motion_kind(boma);
     if mk == hash40("attack_11") {
         cancel_move_if_able(boma, *FIGHTER_STATUS_ATTACK_FLAG_ENABLE_COMBO);
-    } else if mk == hash40("special_air_s1") {
+    } else if mk == hash40("special_air_s1") || mk == hash40("special_s1") {
         let cancelled = cancel_move_if_able(
             boma,
             *FIGHTER_MARTH_STATUS_SPECIAL_S_FLAG_MOTION_CHANGE_ENABLE,

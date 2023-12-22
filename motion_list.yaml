@@ -1071,7 +1071,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 29
+      cancel_frame: 26
       no_stop_intp: false
   attack_dash:
     game_script: game_attackdash
@@ -1087,7 +1087,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 50
+      cancel_frame: 40
       no_stop_intp: false
   attack_s3_s:
     game_script: game_attacks3
@@ -1119,7 +1119,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 34
+      cancel_frame: 32
       no_stop_intp: false
   attack_lw3:
     game_script: game_attacklw3
@@ -1135,7 +1135,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 24
+      cancel_frame: 20
       no_stop_intp: false
   attack_s4_s:
     game_script: game_attacks4
@@ -1151,7 +1151,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 52
+      cancel_frame: 48
       no_stop_intp: false
   attack_s4_hold:
     game_script: game_attacks4charge
@@ -1183,7 +1183,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 59
+      cancel_frame: 46
       no_stop_intp: false
   attack_hi4_hold:
     game_script: game_attackhi4charge
@@ -1247,7 +1247,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 36
+      cancel_frame: 32
       no_stop_intp: false
   attack_air_f:
     game_script: game_attackairf
@@ -1263,7 +1263,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 25
+      cancel_frame: 21
       no_stop_intp: false
   attack_air_b:
     game_script: game_attackairb
@@ -1279,7 +1279,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 30
+      cancel_frame: 26
       no_stop_intp: false
   attack_air_hi:
     game_script: game_attackairhi
@@ -1327,7 +1327,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 20
+      cancel_frame: 7
       no_stop_intp: false
   landing_air_f:
     game_script: game_landingairf
@@ -1343,7 +1343,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 20
+      cancel_frame: 7
       no_stop_intp: false
   landing_air_b:
     game_script: game_landingairb
@@ -1359,7 +1359,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 20
+      cancel_frame: 7
       no_stop_intp: false
   landing_air_hi:
     game_script: game_landingairhi
@@ -1375,7 +1375,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 20
+      cancel_frame: 7
       no_stop_intp: false
   landing_air_lw:
     game_script: game_landingairlw
@@ -1391,7 +1391,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 20
+      cancel_frame: 16
       no_stop_intp: false
   special_n_start:
     game_script: game_specialnstart
@@ -1439,7 +1439,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_n_end_hi:
     game_script: game_specialnendhi
@@ -1471,7 +1471,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_n_end_max:
     game_script: game_specialnendmax
@@ -1487,7 +1487,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_n_end_max_hi:
     game_script: game_specialnendmaxhi
@@ -1503,7 +1503,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_n_end_max_lw:
     game_script: game_specialnendmaxlw
@@ -1519,7 +1519,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_air_n_start:
     game_script: game_specialairnstart
@@ -1567,7 +1567,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_air_n_end_hi:
     game_script: game_specialairnendhi
@@ -1583,7 +1583,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_air_n_end_lw:
     game_script: game_specialairnendlw
@@ -1599,7 +1599,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_air_n_end_max:
     game_script: game_specialairnendmax
@@ -1615,7 +1615,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_air_n_end_max_hi:
     game_script: game_specialairnendmaxhi
@@ -1631,7 +1631,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_air_n_end_max_lw:
     game_script: game_specialairnendmaxlw
@@ -1647,7 +1647,7 @@ list:
     extra:
       xlu_start: 0
       xlu_end: 0
-      cancel_frame: 40
+      cancel_frame: 29
       no_stop_intp: false
   special_s1:
     game_script: game_specials1
