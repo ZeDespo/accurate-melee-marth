@@ -19,7 +19,7 @@ unsafe extern "C" fn marth_attacks4(agent: &mut L2CAgentBase) {
             *FIGHTER_STATUS_ATTACK_FLAG_START_SMASH_HOLD,
         );
     }
-    frame(agent.lua_state_agent, 10.0);
+    frame(agent.lua_state_agent, 7.0);
     if macros::is_excute(agent) {
         macros::ATTACK(
             agent,
