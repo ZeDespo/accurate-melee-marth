@@ -24,6 +24,8 @@ pub const DAIR_TIPPER_HITSTUN: f32 = 1.75;
 pub const UP_THROW_BKB: i32 = 60;
 pub const UP_THROW_KBG: i32 = 130;
 
+pub const NAIR_TIPPER_SHIFT: f32 = 1.5;
+
 // Evil angle, may adjust.
 pub const DOWN_THROW_ANGLE: u64 = 135;
 
