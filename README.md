@@ -12,8 +12,8 @@ other mods I have in mind.
 
 ### Frame Data
 
-- All aerial landings assume L-Cancelling
-- All grounded attacks have built in IASA frames, so they cancel faster.
+- All aerial landings assume L-Cancelling, for faster attack chaining.
+- All grounded attacks have built in IASA frames, so you can cancel them faster.
 
 ### Grab
 
@@ -42,20 +42,20 @@ the grab stops scaling.
 - Extended the hitbox so Marth can hit behind him, sort of like Sephiroth's UAir.
 - Cancellable on frame 20
 
-#### FAir 
+### FAir 
 
 - Tipper has 1.65 more frames of hitstun. 
 - Tipper sends at an angle of 67 degrees, optimal Ken Combo angle.
 - Cancellable on frame 24
 
-#### DAir 
+### DAir 
 
 - Tipper a bit larger
 - Used Melee's down air animation (sword swing starts from direction marth faces)
 - Removed the sword sourspot in favor of a "slightly" weaker spike, making ken combo easier to achieve.
 - Cancellable on frame 30 
 
-#### Bair
+### Bair
 
 - Increased Tipper size.
 - Cancallable on frame 29.
